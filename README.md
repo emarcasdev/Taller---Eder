@@ -4,7 +4,7 @@ El proyecto consiste en crear un taller de vehículos donde el usuario ingresar�
 un mensaje con que se ha reparado su vehículo con los datos del mismo y por ultimo saldra una pestaña por si el usuario que ingrese otro vehículo o salir del programa.
 
 El proyecto consta del main y de una clase vehículos y se utiliza un polimorfismo dinámico y herencia en las clases: 
-- Main: Se encuentra el menú y dos métodos que son datosVehiculos() donde el usuario elige el vehículo que va a reparar e ingresa los datos de su vehículo y el método finSeguir() para que el usuario decida si quiere seguir reparando o salir del programa.
+- <b>Main</b>: Se encuentra el menú y dos métodos que son datosVehiculos() donde el usuario elige el vehículo que va a reparar e ingresa los datos de su vehículo y el método finSeguir() para que el usuario decida si quiere seguir reparando o salir del programa.
 - <b>Clase Vehículos</b>: Hay es donde encontramos la superclase vehiculo con el método reparar() y sus cinco clases (hijo) que son coche, moto, camión, tractor y grúa con sus métodos reparar()
 
 Preguntas:
