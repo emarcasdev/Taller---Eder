@@ -2,7 +2,7 @@
 
 <ul><h3>Indice</h3>
 <li>Introducción</li>
-<li>Estructura</li
+<li>Estructura</li>
 <li>Preguntas</li>
 </ul>
 
