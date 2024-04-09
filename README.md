@@ -1,6 +1,7 @@
 <h1> EXPLICACIÓN PROYECTO: </h1>
 
-<ul><h3>Indice</h3>
+<h3>Indice</h3>
+<ul>
 <li>Introducción</li>
 <li>Estructura</li>
 <li>Preguntas</li>
