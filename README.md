@@ -20,8 +20,10 @@ El proyecto consta del main y de una clase vehículos y se utiliza un polimorfis
 
 <h4>Preguntas</h4>
 
-¿Puede existir una estructura de padre => hijo => hijo en una clase?
-    Sí, se le denomina herencia múltiple y permite organizar jerarquías complejas de clases además de facilitar la reutilización del código.
+- ¿Puede existir una estructura de padre => hijo => hijo en una clase?
+    
+Sí, se le denomina herencia múltiple y permite organizar jerarquías complejas de clases además de facilitar la reutilización del código.
 
-¿Puede existir que una clase herede de dos clases padre? y porque
-    Depende, por ejemplo en Java una clase no puede heredar de dos clases padre por que no tiene herencia múltiple, pero otros lenguajes como python si pueden heredar de múltiples clases padre. 
+- ¿Puede existir que una clase herede de dos clases padre? y porque
+    
+Depende, por ejemplo en Java una clase no puede heredar de dos clases padre por que no tiene herencia múltiple, pero otros lenguajes como python si pueden heredar de múltiples clases padre. 
