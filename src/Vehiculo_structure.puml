@@ -1,0 +1,242 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Vehiculo",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_2011086329 { 
+   	label=Camion
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Camion2011086329[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Camion</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   capo: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   chimenea: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   guardabarros: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   paravientos: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   semiremolque: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ reparar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2078858629 { 
+   	label=Vehiculo
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Vehiculo2078858629[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Vehiculo</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   color: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   matricula: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   modelo: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ reparar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2228439 { 
+   	label=Grua
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Grua2228439[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Grua</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   aparejo: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   gancho: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   plataforma: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   pluma: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   plumin: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ reparar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2404285 { 
+   	label=Moto
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Moto2404285[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Moto</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   calapie: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   cilindros: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   exosto: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   farola: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   manijas: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ reparar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_597266967 { 
+   	label=Tractor
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Tractor597266967[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Tractor</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   diferencial: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   embrague: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   gradas: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   llantas: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   rops: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ reparar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_65281172 { 
+   	label=Coche
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Coche65281172[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Coche</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   claxon: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   faros: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   frenos: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   motor: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   neumaticos: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ reparar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Vehiculo2078858629 -> Camion2011086329[arrowhead=none, arrowtail=empty, dir=both];
+Vehiculo2078858629 -> Coche65281172[arrowhead=none, arrowtail=empty, dir=both];
+Vehiculo2078858629 -> Grua2228439[arrowhead=none, arrowtail=empty, dir=both];
+Vehiculo2078858629 -> Moto2404285[arrowhead=none, arrowtail=empty, dir=both];
+Vehiculo2078858629 -> Tractor597266967[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml
